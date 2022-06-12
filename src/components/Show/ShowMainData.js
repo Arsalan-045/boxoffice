@@ -1,7 +1,6 @@
 import React from 'react';
 import { MainDataWrapper, Headline, TagList } from './ShowMainData.styled';
-
-// import {Star} from '../Styled';
+import { Star } from '../Styled';
 
 const ShowMainData = ({name, rating, summary, tags, image}) => {
   return (
@@ -12,7 +11,7 @@ const ShowMainData = ({name, rating, summary, tags, image}) => {
       <div>
         <h1>{name}</h1>
         <div>
-          {/* <Star /> */}
+          <Star active />
           <span>{rating.average || 'N/A'}</span>
         </div>
       </div>
